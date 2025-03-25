@@ -6,11 +6,11 @@ const SEARCH_API =
 // first wwe select elements on the doc
   const main = document.querySelector("main")
     // fetch the api url
-    const empty = document.querySelector(".empty")
+    const emptyDiv = document.querySelector(".empty")
   // next we have to fetch api  
   async function getMovies(url) {
     main.innerHTML =''
-    emptydiv.style.display ='none'
+    emptyDiv.style.display ='none'
     const res = await fetch(url)
     const data = await res.json()
     // console.log(data.results);
